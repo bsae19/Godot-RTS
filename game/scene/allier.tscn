@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://png/png/scifiUnit_03.png" type="Texture" id=1]
+[ext_resource path="res://scene/allier.gd" type="Script" id=2]
+[ext_resource path="res://png/png/barHorizontal_green_mid.png" type="Texture" id=3]
+[ext_resource path="res://png/png/crossair_blueOutline.png" type="Texture" id=4]
+[ext_resource path="res://audio/sf_canon_01.wav" type="AudioStream" id=5]
+[ext_resource path="res://audio/SFB-explosion2.wav" type="AudioStream" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24.674, 24.7929 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 270.0
+
+[node name="allier" type="KinematicBody2D"]
+input_pickable = true
+script = ExtResource( 2 )
+
+[node name="cible" type="Sprite" parent="."]
+position = Vector2( -16, 14 )
+scale = Vector2( 2.54167, 2.34722 )
+texture = ExtResource( 4 )
+
+[node name="troupe" type="Sprite" parent="."]
+position = Vector2( -13.5, 13.5 )
+scale = Vector2( 2.41581, 2.1061 )
+texture = ExtResource( 1 )
+
+[node name="vie" type="TextureProgress" parent="."]
+margin_left = -49.0
+margin_top = -33.0
+margin_right = 11.0
+margin_bottom = -28.0
+max_value = 150.0
+value = 150.0
+texture_progress = ExtResource( 3 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="."]
+margin_left = -28.0
+margin_top = -54.0
+margin_right = 30.0
+margin_bottom = -37.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -15.9535, 15.8355 )
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 2 )
+
+[node name="cannon" type="Sprite" parent="."]
+
+[node name="can" type="Position2D" parent="cannon"]
+position = Vector2( 9.437, 0 )
+
+[node name="audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+
+[node name="audio2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+[connection signal="input_event" from="." to="." method="_on_allier_input_event"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

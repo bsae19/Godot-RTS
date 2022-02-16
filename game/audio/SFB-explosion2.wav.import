@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFB-explosion2.wav-bcd0239b4e2860d8fe753fa23b7a674c.sample"
+
+[deps]
+
+source_file="res://audio/SFB-explosion2.wav"
+dest_files=[ "res://.import/SFB-explosion2.wav-bcd0239b4e2860d8fe753fa23b7a674c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

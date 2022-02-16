@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/AMBUrbn_Peripherique parisien (ID 1080)_LS.wav-820ed7680c46483a69653c73ff88dc9e.sample"
+
+[deps]
+
+source_file="res://audio/AMBUrbn_Peripherique parisien (ID 1080)_LS.wav"
+dest_files=[ "res://.import/AMBUrbn_Peripherique parisien (ID 1080)_LS.wav-820ed7680c46483a69653c73ff88dc9e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

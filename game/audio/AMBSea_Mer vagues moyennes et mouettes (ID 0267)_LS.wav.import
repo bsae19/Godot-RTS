@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/AMBSea_Mer vagues moyennes et mouettes (ID 0267)_LS.wav-dd92fcfa2ad25f9c60af3d1f03017699.sample"
+
+[deps]
+
+source_file="res://audio/AMBSea_Mer vagues moyennes et mouettes (ID 0267)_LS.wav"
+dest_files=[ "res://.import/AMBSea_Mer vagues moyennes et mouettes (ID 0267)_LS.wav-dd92fcfa2ad25f9c60af3d1f03017699.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

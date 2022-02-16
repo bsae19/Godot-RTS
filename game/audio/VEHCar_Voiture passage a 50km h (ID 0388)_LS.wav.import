@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/VEHCar_Voiture passage a 50km h (ID 0388)_LS.wav-ed5cd16fdf95dd4b083a646220b3147b.sample"
+
+[deps]
+
+source_file="res://audio/VEHCar_Voiture passage a 50km h (ID 0388)_LS.wav"
+dest_files=[ "res://.import/VEHCar_Voiture passage a 50km h (ID 0388)_LS.wav-ed5cd16fdf95dd4b083a646220b3147b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
